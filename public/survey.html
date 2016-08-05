@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+		<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+	<title>Friend Finder</title>
+</head>
+
+<body>
+<script src="assets/js/main.js"></script>
+
+<div class="row">
+	<div class ="col-md-2" id='leftDiv'>
+	</div>
+	<div class ="col-md-8" id='leftDiv'>
+	
+	<h1> Survey Questions</h1>
+		<h2>About You</h2>
+			<form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Name (required)
+			    </label>
+			    <input type="input" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Name">
+			    <small id="nameHelp" class="form-text text-muted"></small>
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Photo Link</label>
+			    <input type="input" class="form-control" id="inputPhotoLink" placeholder="Photo link">
+			  </div>
+			<h4>Question 1</h4>	
+			  <div class="form-group">
+			   <label for="exampleSelect1">Your mind is always buzzing with unexplored ideas and plans.
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="0">1</button>
+							<button type="button" class="btn btn-default answer" data-index="0">2</button>
+							<button type="button" class="btn btn-default answer" data-index="0">3</button>
+							<button type="button" class="btn btn-default answer" data-index="0">4</button>
+							<button type="button" class="btn btn-default answer" data-index="0">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 2</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">You rely more on your experience than your imagination.</label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="1">1</button>
+							<button type="button" class="btn btn-default answer" data-index="1">2</button>
+							<button type="button" class="btn btn-default answer" data-index="1">3</button>
+							<button type="button" class="btn btn-default answer" data-index="1">4</button>
+							<button type="button" class="btn btn-default answer" data-index="1">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 3</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">You find it easy to stay relaxed and focused under pressure.
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="2">1</button>
+							<button type="button" class="btn btn-default answer" data-index="2">2</button>
+							<button type="button" class="btn btn-default answer" data-index="2">3</button>
+							<button type="button" class="btn btn-default answer" data-index="2">4</button>
+							<button type="button" class="btn btn-default answer" data-index="2">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 4</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">You rarely do something out of sheer curiosity
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="3">1</button>
+							<button type="button" class="btn btn-default answer" data-index="3">2</button>
+							<button type="button" class="btn btn-default answer" data-index="3">3</button>
+							<button type="button" class="btn btn-default answer" data-index="3">4</button>
+							<button type="button" class="btn btn-default answer" data-index="3">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 5</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">People can rarelt upset you
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="4">1</button>
+							<button type="button" class="btn btn-default answer" data-index="4">2</button>
+							<button type="button" class="btn btn-default answer" data-index="4">3</button>
+							<button type="button" class="btn btn-default answer" data-index="4">4</button>
+							<button type="button" class="btn btn-default answer" data-index="4">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 6</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">It is often difficult for you to relate to other people's feelings.
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="5">1</button>
+							<button type="button" class="btn btn-default answer" data-index="5">2</button>
+							<button type="button" class="btn btn-default answer" data-index="5">3</button>
+							<button type="button" class="btn btn-default answer" data-index="5">4</button>
+							<button type="button" class="btn btn-default answer" data-index="5">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 7</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">In a discussion, truth should be more important than people's sensitivities.
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="6">1</button>
+							<button type="button" class="btn btn-default answer" data-index="6">2</button>
+							<button type="button" class="btn btn-default answer" data-index="6">3</button>
+							<button type="button" class="btn btn-default answer" data-index="6">4</button>
+							<button type="button" class="btn btn-default answer" data-index="6">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 8</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">You rarely get carried away by fantasies and ideas.
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="7">1</button>
+							<button type="button" class="btn btn-default answer" data-index="7">2</button>
+							<button type="button" class="btn btn-default answer" data-index="7">3</button>
+							<button type="button" class="btn btn-default answer" data-index="7">4</button>
+							<button type="button" class="btn btn-default answer" data-index="7">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 9</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">You think that everyone's views should be respected regardless of whether they are supported by facts or not.
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group" id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="8">1</button>
+							<button type="button" class="btn btn-default answer" data-index="8">2</button>
+							<button type="button" class="btn btn-default answer" data-index="8">3</button>
+							<button type="button" class="btn btn-default answer" data-index="8">4</button>
+							<button type="button" class="btn btn-default answer" data-index="8">5</button>
+						</div>
+					</div>
+			  </div>
+			  <h4>Question 10</h4>
+			  <div class="form-group">
+			   <label for="exampleSelect1">You feel more energetic after spending time with a group of people.
+			   </label>
+			    	<div class="btn-toolbar inline" role="toolbar">
+						<div class="btn-group"  id='answers'>
+							<button type="button" class="btn btn-default answer" data-index="">1</button>
+							<button type="button" class="btn btn-default answer" data-index="">2</button>
+							<button type="button" class="btn btn-default answer" data-index="">3</button>
+							<button type="button" class="btn btn-default answer" data-index="">4</button>
+							<button type="button" class="btn btn-default answer" data-index="">5</button>
+						</div>
+					</div>
+			  </div>
+			  	<button type="submit" class="btn btn-primary" id= "submitBtn">Submit</button>
+			</form>
+	</div>
+	<div class ="col-md-2" id='leftDiv'>
+	</div>
+</div>
+
+
+<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Your Top Friend...</h4>
+				</div>
+				<div class="modal-body">
+					<div id="modalBody"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+
+
+
+</body>
+
+</html>
+
+
